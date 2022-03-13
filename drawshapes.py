@@ -16,7 +16,7 @@ elif dict1.get("Shape2")==user_input:
     user_input2=int(input("Enter side of triangle")) 
     for i in range(3):
         turtle.forward(user_input2)
-        turtle.left(60)
+        turtle.left(120)
 elif dict1.get("Shape3")==user_input:
     user_input=int(input("Enter radius of circle")) 
     turtle.cicrle(user_input) 
