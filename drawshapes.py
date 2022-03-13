@@ -1,36 +1,25 @@
 import turtle
 import random
-
 dict1={"Shape1":"square","Shape2":"triangle","Shape3":"circle"}
 colors=["orange","red","green","blue","yellow"]
-user_input=(input("Enter shape you want to draw"))
-
-#Take user input for the shape and use variable name as user_input
-
-#Fill colors using random function
+user_input=(input("Enter shape you want to draw")) 
 color=random.choice(colors)
 turtle.fillcolor(color)
+#Fill colors using random function
 turtle.begin_fill()
-
 if dict1.get("Shape1")==user_input:
-    user_inputa=int(input("Enter side of square"))
+    user_input1=int(input("Enter side of square"))
     for i in range(4):
-        turtle.forward(user_inputa)
+        turtle.forward(user_input1)
         turtle.left(90)
-    #Write the code for drawing a square having side = 100
 elif dict1.get("Shape2")==user_input:
-    user_inputb=int(input("Enter side of triangle"))
+    user_input2=int(input("Enter side of triangle")) 
     for i in range(3):
-        turtle.forward(user_inputb)
-        turtle.left(120)
-  
-    #use the get function using key==user_input:
-    #Write the code for drawing a triangle having side = 100
+        turtle.forward(user_input2)
+        turtle.left(60)
 elif dict1.get("Shape3")==user_input:
-    user_inoutc=int(input("Enter radius of circle"))
-#use the get function using key==user_input:
-    #Draw a square of radius = 100
+    user_input=int(input("Enter radius of circle")) 
 else:
-    print("Enter a value between square, triangle and circle")
+    print("Enter a value between square, circle and triangle")
     
 turtle.end_fill()
