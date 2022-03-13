@@ -19,7 +19,7 @@ elif dict1.get("Shape2")==user_input:
         turtle.left(120)
 elif dict1.get("Shape3")==user_input:
     user_input=int(input("Enter radius of circle")) 
-    turtle.cirle(user_input) 
+    turtle.circle(user_input) 
 else:
     print("Enter a value between square, circle and triangle")
     
